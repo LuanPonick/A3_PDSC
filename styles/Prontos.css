@@ -1,0 +1,27 @@
+:root{
+    --cor-01: #6391E0;
+    --cor-02: #0743aa;
+    --tamanho-btns:69%;
+}
+*{
+    box-sizing: border-box;
+}
+button.tipo-1{
+    --bg-color:white;
+    transition-duration:0.4s;
+    background-color: var(--bg-color);
+    border: 1px solid var(--bg-color);
+    border-radius: 30px;
+    transition-property: background-color,border-color;
+    border-color: var(--bg-color);
+}
+button.tipo-1:hover{
+    transition-duration:0.4s ;
+    transition-property: background-color,border-color;
+    border-color: rgba(0, 0, 0, 0.404);
+    background-color: rgba(255, 255, 255, 0.815);
+}
+
+.imgs-principal-mobile{
+    width: 150px;
+}

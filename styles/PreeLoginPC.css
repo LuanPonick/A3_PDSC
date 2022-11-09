@@ -1,0 +1,40 @@
+@media (min-width:600px){
+    main{
+        position: initial;
+        transform:initial;
+    }
+    header{
+        height: 90px;
+        width: 90%;
+        margin-top: 70px;
+        display: flex;
+        flex-wrap:wrap;
+        justify-content: space-evenly;
+        align-content: center;
+    }
+    header h1{
+        font-size: 3.5vw;
+        width: 100%;
+    }
+    h2{
+        font-size: 3.5vw;
+    }
+    button{
+        margin-top: 30px;
+        max-width: 300px;
+        height: 6vw;
+        font-size: 20px;
+    }
+    .container-botoes{
+        justify-content: space-evenly;
+    }
+    
+    
+    .imgs-principal-PC{
+        display: block;
+        
+    }
+    .imgs-principal-MOBILE{
+        display: none;
+    }
+}

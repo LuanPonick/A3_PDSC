@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/DoadorCadastro.css">
+    <link rel="stylesheet" href="../styles/Prontos.css">
+</head>
+<body>
+    <header>
+        <h1>Olá Querido(a) Doador(a)</h1>
+    </header>
+    <div class="container-botoes">
+        <button class="tipo-1"onclick="Cadastro()">Deseja se cadastrar?</button>
+        <button disabled="disabled" class="tipo-1"onclick="Logar()">Já possue conta?</button>
+    </div>
+    <form id="login" action="">
+        <div class="cabecalho-form"><span>Logar :3</span></div>
+
+        <div class="valores">
+            <label for="email"><span class="tipo-2">Email:</span></label>
+            <input class="tipo-2" id="email" type="email">
+        </div>
+        <br>
+        <div class="valores">
+            <label for="senha"><span class="tipo-2">Senha:</span></label>
+            <input class="tipo-2" id="senha" type="password">
+        </div>
+        <br>
+        <button class="esqueci-senha tipo-1 ">esqueci minha senha!!!</button>
+        <br>
+        <button class="botaoLogar" class="tipo-1" type="submit">ENTRAR</button>
+        <small><a onclick="Cadastrar()" href="#">Já possue cadastro?</a></small>
+    </form>
+        
+    <script>
+        function Cadastro()
+        {
+            console.log("ok");
+        }
+        function Logar(){
+            let form = document.getElementById()       
+        }
+    </script>
+</body>
+</html>
