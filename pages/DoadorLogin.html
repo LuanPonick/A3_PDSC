@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,25 +14,46 @@
     </header>
     <div class="container-botoes">
         <button class="tipo-1"onclick="Cadastro()">Deseja se cadastrar?</button>
-        <button disabled="disabled" class="tipo-1"onclick="Logar()">Já possue conta?</button>
+        <button  class="tipo-1"onclick="Logar()">Já possue conta?</button>
     </div>
     <form id="login" action="">
         <div class="cabecalho-form"><span>Logar :3</span></div>
 
         <div class="valores">
-            <label for="email"><span class="tipo-2">Email:</span></label>
-            <input class="tipo-2" id="email" type="email">
+            <label for="emailL"><span class="tipo-2">Email:</span></label>
+            <input class="tipo-2" id="emailL" type="email">
         </div>
         <br>
         <div class="valores">
-            <label for="senha"><span class="tipo-2">Senha:</span></label>
-            <input class="tipo-2" id="senha" type="password">
+            <label for="senhaL"><span class="tipo-2">Senha:</span></label>
+            <input class="tipo-2" id="senhaL" type="password">
         </div>
         <br>
         <button class="esqueci-senha tipo-1 ">esqueci minha senha!!!</button>
         <br>
         <button class="botaoLogar" class="tipo-1" type="submit">ENTRAR</button>
         <small><a onclick="Cadastrar()" href="#">Já possue cadastro?</a></small>
+    </form>
+    <form id="cadastro" action="">
+        <div class="cabecalho-form" style="margin-bottom:30px ;"><span>Cadastrar :2</span></div>
+        <span id="erro">escreve direito o seu animal</span>
+        <div class="valores">
+            <label for="email"><span class="tipo-2">Email:</span></label>
+            <input class="tipo-2" id="email" type="email">
+        </div>
+        <div class="valores">
+            <label for="senha"><span class="tipo-2">CPF:</span></label>
+            <input class="tipo-2" id="senha" type="password">
+        </div>
+        <div class="valores">
+            <label for="senha"><span class="tipo-2">Senha:</span></label>
+            <input class="tipo-2" id="senha" type="password">
+        </div>
+        <div class="valores">
+            <label for="senha"><span class="tipo-2">Senha:</span></label>
+            <input class="tipo-2" id="senha" type="password">
+        </div>
+        <button class="botaoLogar" class="tipo-1" type="submit">CADASTRAR</button>
     </form>
         
     <script>
@@ -41,7 +62,14 @@
             console.log("ok");
         }
         function Logar(){
-            let form = document.getElementById()       
+            let formL = document.getElementById("login");
+            if(formL.style.display == "flex") 
+            {
+                formL.style.display = "none";     
+            }
+            else{
+                formL.style.display = "flex";     
+            }
         }
     </script>
 </body>

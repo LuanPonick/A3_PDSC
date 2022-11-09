@@ -11,13 +11,16 @@ main{
 }
 
 header{
-    max-width: 60%;
+    max-width: 90%;
     margin-inline: auto;
     margin-top: 7.5%;
     text-align: center;
     background-color: white;
-    
+    min-height: 60px;
     border-radius: 5em;
+    display: flex;
+    justify-content: center;
+    align-content: center;
     
 }
 header h1{

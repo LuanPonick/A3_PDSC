@@ -26,11 +26,12 @@ form{
     padding: 1px;
     height: 70vh;
     width: 100%;
+    border-radius:20px;
+    background-color: var(--cor-02);
+    flex-direction: column;
 }
 form#login{
-    display: flex;
-    flex-direction: column;
-    background-color: var(--cor-02);
+    display: none;
 }
 .conateinr-botoes button{
     width: 40%;
@@ -70,6 +71,7 @@ label{
     border-radius: 30px;
     display: inline-block;
     padding: 4vw;
+    width: 18%;
     margin-top: 10px;
     padding-inline:30px ;
 }
@@ -80,7 +82,7 @@ button.esqueci-senha{
     width: 70%;
 }
 .botaoLogar{
-    background-color: green;
+    background-color: #7ED957;
     border: 0;
     border-radius: 20px;
     width: 50%;
@@ -101,5 +103,14 @@ small a{
     color: white;
     font-size: 20px;
 }
+#cadastro{
+    display: flex;
 
-
+}
+#erro{
+    position: absolute;
+    color: red;
+    left: 50%;
+    top:34%;
+    transform: translate(-50%,-50%);
+}
