@@ -13,12 +13,12 @@
         <h1>Olá Querido(a) Doador(a)</h1>
     </header>
     <div class="container-botoes">
-        <button class="tipo-1"onclick="Cadastro()">Deseja se cadastrar?</button>
-        <button  class="tipo-1"onclick="Logar()">Já possue conta?</button>
+        <button id="bCadastro" class="tipo-1"onclick="Cadastro()">Deseja se cadastrar?</button>
+        <button id="bLogin" class="tipo-1"onclick="Logar()">Já possue conta?</button>
     </div>
     <form id="login" action="">
         <div class="cabecalho-form"><span>Logar :3</span></div>
-
+        <span id="erroL">escreve direito o seu animal</span>
         <div class="valores">
             <label for="emailL"><span class="tipo-2">Email:</span></label>
             <input class="tipo-2" id="emailL" type="email">
@@ -32,45 +32,30 @@
         <button class="esqueci-senha tipo-1 ">esqueci minha senha!!!</button>
         <br>
         <button class="botaoLogar" class="tipo-1" type="submit">ENTRAR</button>
-        <small><a onclick="Cadastrar()" href="#">Já possue cadastro?</a></small>
+        <small><a onclick="Cadastro()" href="#">Já possue cadastro?</a></small>
     </form>
     <form id="cadastro" action="">
         <div class="cabecalho-form" style="margin-bottom:30px ;"><span>Cadastrar :2</span></div>
-        <span id="erro">escreve direito o seu animal</span>
+        <span id="erroC">escreve direito o seu animal</span>
         <div class="valores">
-            <label for="email"><span class="tipo-2">Email:</span></label>
-            <input class="tipo-2" id="email" type="email">
+            <label for="emailC"><span class="tipo-2">Email:</span></label>
+            <input class="tipo-2" id="emailC" type="email">
         </div>
         <div class="valores">
-            <label for="senha"><span class="tipo-2">CPF:</span></label>
-            <input class="tipo-2" id="senha" type="password">
+            <label for="cpf"><span class="tipo-2">CPF:</span></label>
+            <input class="tipo-2" id="cpf" type="text">
         </div>
         <div class="valores">
-            <label for="senha"><span class="tipo-2">Senha:</span></label>
-            <input class="tipo-2" id="senha" type="password">
+            <label for="senha1"><span class="tipo-2">Senha:</span></label>
+            <input class="tipo-2" id="senha1" type="text">
         </div>
         <div class="valores">
-            <label for="senha"><span class="tipo-2">Senha:</span></label>
-            <input class="tipo-2" id="senha" type="password">
+            <label for="senha2"><span class="tipo-2">Senha:</span></label>
+            <input class="tipo-2" id="senha2" type="password">
         </div>
         <button class="botaoLogar" class="tipo-1" type="submit">CADASTRAR</button>
     </form>
         
-    <script>
-        function Cadastro()
-        {
-            console.log("ok");
-        }
-        function Logar(){
-            let formL = document.getElementById("login");
-            if(formL.style.display == "flex") 
-            {
-                formL.style.display = "none";     
-            }
-            else{
-                formL.style.display = "flex";     
-            }
-        }
-    </script>
+    <script src="../js/DoadorLogin.js"></script>
 </body>
 </html>

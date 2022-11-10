@@ -13,7 +13,7 @@ main{
 header{
     max-width: 90%;
     margin-inline: auto;
-    margin-top: 7.5%;
+    margin-bottom: 60px;
     text-align: center;
     background-color: white;
     min-height: 60px;
@@ -41,6 +41,7 @@ h2{
     height: 55px;
     display: flex;
     justify-content: space-between;
+    margin-top: 50px;
 }
 button{
     width: 45%;
