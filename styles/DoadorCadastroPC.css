@@ -1,0 +1,30 @@
+@media (min-width:700px){
+    header{
+        width: 90%;
+        margin-inline:auto ;
+        width: 60%;
+        height: 10vh;
+    }
+    h1{
+        font-size: 32px;
+    }
+    .container-botoes{
+        display: none;
+    }
+
+    .cadastros{
+        display: flex;
+        justify-content: space-around
+    }
+    #login , #cadastro{
+        display: flex;
+        width: 40%;
+    }
+    input.tipo-2{
+        height: 8vh;
+    }
+    label{
+        height: 10px;
+        padding: 20px;
+    }
+}

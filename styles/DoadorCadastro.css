@@ -30,7 +30,7 @@ form{
     background-color: var(--cor-02);
     flex-direction: column;
 }
-form#login{
+#login{
     display: none;
 }
 .conateinr-botoes button{

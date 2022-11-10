@@ -7,6 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="../styles/DoadorCadastro.css">
     <link rel="stylesheet" href="../styles/Prontos.css">
+    <link rel="stylesheet" href="../styles/DoadorCadastroPC.css">
 </head>
 <body>
     <header>
@@ -16,45 +17,47 @@
         <button id="bCadastro" class="tipo-1"onclick="Cadastro()">Deseja se cadastrar?</button>
         <button id="bLogin" class="tipo-1"onclick="Logar()">Já possue conta?</button>
     </div>
-    <form id="login" action="">
-        <div class="cabecalho-form"><span>Logar :3</span></div>
-        <span id="erroL">escreve direito o seu animal</span>
-        <div class="valores">
-            <label for="emailL"><span class="tipo-2">Email:</span></label>
-            <input class="tipo-2" id="emailL" type="email">
-        </div>
-        <br>
-        <div class="valores">
-            <label for="senhaL"><span class="tipo-2">Senha:</span></label>
-            <input class="tipo-2" id="senhaL" type="password">
-        </div>
-        <br>
-        <button class="esqueci-senha tipo-1 ">esqueci minha senha!!!</button>
-        <br>
-        <button class="botaoLogar" class="tipo-1" type="submit">ENTRAR</button>
-        <small><a onclick="Cadastro()" href="#">Já possue cadastro?</a></small>
-    </form>
-    <form id="cadastro" action="">
-        <div class="cabecalho-form" style="margin-bottom:30px ;"><span>Cadastrar :2</span></div>
-        <span id="erroC">escreve direito o seu animal</span>
-        <div class="valores">
-            <label for="emailC"><span class="tipo-2">Email:</span></label>
-            <input class="tipo-2" id="emailC" type="email">
-        </div>
-        <div class="valores">
-            <label for="cpf"><span class="tipo-2">CPF:</span></label>
-            <input class="tipo-2" id="cpf" type="text">
-        </div>
-        <div class="valores">
-            <label for="senha1"><span class="tipo-2">Senha:</span></label>
-            <input class="tipo-2" id="senha1" type="text">
-        </div>
-        <div class="valores">
-            <label for="senha2"><span class="tipo-2">Senha:</span></label>
-            <input class="tipo-2" id="senha2" type="password">
-        </div>
-        <button class="botaoLogar" class="tipo-1" type="submit">CADASTRAR</button>
-    </form>
+    <div class="cadastros">
+        <form id="login" action="">
+            <div class="cabecalho-form"><span>Logar :3</span></div>
+            <span id="erroL"></span>
+            <div class="valores">
+                <label for="emailL"><span class="tipo-2">Email:</span></label>
+                <input class="tipo-2" id="emailL" type="email">
+            </div>
+            <br>
+            <div class="valores">
+                <label for="senhaL"><span class="tipo-2">Senha:</span></label>
+                <input class="tipo-2" id="senhaL" type="password">
+            </div>
+            <br>
+            <button class="esqueci-senha tipo-1 ">esqueci minha senha!!!</button>
+            <br>
+            <button class="botaoLogar" class="tipo-1" type="submit">ENTRAR</button>
+            <small><a onclick="Cadastro()" href="#">Já possue cadastro?</a></small>
+        </form>
+        <form id="cadastro" action="">
+            <div class="cabecalho-form" style="margin-bottom:30px ;"><span>Cadastrar :2</span></div>
+            <span id="erroC"></span>
+            <div class="valores">
+                <label for="emailC"><span class="tipo-2">Email:</span></label>
+                <input class="tipo-2" id="emailC" type="email">
+            </div>
+            <div class="valores">
+                <label for="cpf"><span class="tipo-2">CPF:</span></label>
+                <input class="tipo-2" id="cpf" type="text">
+            </div>
+            <div class="valores">
+                <label for="senha1"><span class="tipo-2">Senha:</span></label>
+                <input class="tipo-2" id="senha1" type="text">
+            </div>
+            <div class="valores">
+                <label for="senha2"><span class="tipo-2">Senha:</span></label>
+                <input class="tipo-2" id="senha2" type="password">
+            </div>
+            <button class="botaoLogar" class="tipo-1" type="submit">CADASTRAR</button>
+        </form>
+    </div>
         
     <script src="../js/DoadorLogin.js"></script>
 </body>
