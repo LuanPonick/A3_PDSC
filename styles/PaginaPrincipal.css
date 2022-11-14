@@ -11,16 +11,16 @@ body{
     width: 65%;
     left: 2.5%;
     height: 100%;
-    background-color: red;
+    background-color: var(--cor-03);
     position: absolute;
     padding-inline:20px;
     padding-bottom: 20px;
 }
 .principal-container{
-    background-color: pink;
+    background-color: none;
     width: 100%;
     height: calc(100% - 90px);
-    overflow-y: scroll;
+    overflow-y: auto;
     margin-top: 10px;
 }
 .navbar{
@@ -47,7 +47,7 @@ body{
     width: 90%;
     height: 100%;
     position: relative;
-    font-size: 20px;
+    font-size: 6.5vh;
 }
 .pesquisar{
     width: 10%;
@@ -61,6 +61,64 @@ body{
     width: 100%;
     height: 100%;
 }
+.conteudo-principal{
+    width: 95%;
+    height: 300px;
+    margin-inline:auto;
+    margin-top: 10px;
+    background-color: var(--cor-secudarias-1);
+    border: 1px solid black;
+    border-radius: 20px;
+    
+}
+.conteudo-principal:first-child{
+    margin-top: 0;
+}
+.p1{
+    justify-content: space-between;
+    display: flex;
+    background-color: white;
+    width: 95%;
+    height: 10%;
+    margin-top: 20px;
+    margin-inline:auto;
+    margin-bottom: 30px;
+}
+.nome-ong , .foco{
+    display: flex;
+    align-items: center;
+}
+.nome-ong{
+    margin-left: 20px;
+}
+.foco{
+    background-color: #FF914D;
+    width: 20%;
+    padding-right: 20px;
+    justify-content: center;
+}
+.p2{
+    width: 95%;
+    height: 60%;
+    margin-inline: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.p2 p{
+    width: 80%;
+    height: 100%;
+    background-color: white;
+    padding: 20px 4px 20px 20px;
+    overflow-y: auto;
+}
+.p2 button{
+    width: 10vw;
+    height: 10vw;
+    border: 1px solid black;
+    border-radius: 100%;
+}
+
 
 
 
